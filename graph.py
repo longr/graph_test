@@ -30,7 +30,7 @@ projects = {
 G = Network(notebook=False, height='1000px', width='100%')#, select_menu=True)
 
 for project in projects:
-    G.add_node(project, size=10, label=project, title=projects[project]['name'], group='projects', shape='ellipse')
+    G.add_node(project, size=10, label=project, title=projects[project]['name'], group='projects', shape='circle')
     for output in projects[project]['outputs']:
         G.add_node(output, size=5, label=output, group='outputs', shape='ellipse')
         G.add_edge(project, output, weight=2, color='#009900')
