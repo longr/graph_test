@@ -22,7 +22,7 @@ jobs:
       - name: Move graph
         run: |
           mkdir output
-          mv dri.html lib output
+          mv index.html lib output
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
